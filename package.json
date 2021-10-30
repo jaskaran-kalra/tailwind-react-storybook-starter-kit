@@ -1,5 +1,5 @@
 {
-  "name": "@jaskaran-kalra/tailwind-react-storybook-starter-kit",
+  "name": "@jaskaran-singh/tailwind-react-storybook-starter-kit",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -58,5 +58,17 @@
     "autoprefixer": "9",
     "react-scripts": "4.0.3",
     "craco": "^0.0.3"
-  }
+  },
+  "description": "This project designed to help developers to quickly create a storybook app without going through the difficult installation process of tailwind and react.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaskaran-kalra/tailwind-react-storybook-starter-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaskaran-kalra/tailwind-react-storybook-starter-kit/issues"
+  },
+  "homepage": "https://github.com/jaskaran-kalra/tailwind-react-storybook-starter-kit#readme"
 }

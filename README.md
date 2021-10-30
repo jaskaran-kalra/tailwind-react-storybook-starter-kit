@@ -2,21 +2,18 @@
 
 This project designed to help developers to quickly create a storybook app without going through the difficult installation process of tailwind and react.
 
-# Clone the repo
+## To clone the repo
 
-### `git clone https://github.com/jaskaran-kalra/tailwind-react-storybook-starter-kit.git`
+## run `git clone https://github.com/jaskaran-kalra/tailwind-react-storybook-starter-kit.git`
 
-# Enter the folder 
+## 1. Enter the folder 
+`cd tailwind-react-storybook-starter-kit`
 
-### `cd tailwind-react-storybook-starter-kit`
+## 2. Install packages
+`yarn`
 
-# Install packages
-
-### `yarn`
-
-# To run the application
-
-### `yarn storybook`
+## 3. Run the application
+`yarn storybook`
 
 Launches storybook application on port 6006.
 
