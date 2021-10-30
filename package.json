@@ -8,7 +8,7 @@
     "react-dom": "^17.0.2"
   },
   "scripts": {
-    "build": "craco build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "craco test",
     "eject": "craco eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -42,7 +42,18 @@
       "last 1 safari version"
     ]
   },
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
   "devDependencies": {
+    "@babel/cli": "7.15.7",
     "@babel/preset-react": "^7.16.0",
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
@@ -54,10 +65,11 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "postcss": "7",
     "autoprefixer": "9",
-    "react-scripts": "4.0.3",
-    "craco": "^0.0.3"
+    "craco": "^0.0.3",
+    "cross-env": "7.0.3",
+    "postcss": "7",
+    "react-scripts": "4.0.3"
   },
   "description": "This project designed to help developers to quickly create a storybook app without going through the difficult installation process of tailwind and react.",
   "main": "src/index.js",
