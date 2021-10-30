@@ -1,0 +1,6 @@
+.alert-container {
+  @apply flex items-center h-16 border border-gray-300 pr-4 w-full max-w-md shadow-lg;
+}
+.alert-icon-container {
+  @apply flex items-center justify-center bg-gray-300 w-12 h-full;
+}

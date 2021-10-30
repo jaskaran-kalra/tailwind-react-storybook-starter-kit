@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind forms;
+.alert-container {
+  @apply flex items-center h-16 border border-gray-300 pr-4 w-full max-w-md shadow-lg;
+}
+.alert-icon-container {
+  @apply flex items-center justify-center bg-gray-300 w-12 h-full;
+}
+.btn {
+  @apply py-2 px-4 font-semibold rounded-lg shadow-md text-base;
+}
+.btn-small {
+  @apply py-1 px-3 text-sm;
+}
+.btn-large {
+  @apply py-3 px-5 text-lg;
+}
+.btn-primary {
+  @apply text-white bg-blue-500 hover:bg-blue-700;
+}
+.btn-secondary {
+  @apply text-gray-800 bg-gray-300 hover:bg-gray-400;
+}
+.form-container {
+  @apply flex flex-col items-center justify-center w-screen h-screen bg-gray-200 text-gray-700;
+}
+.form {
+  @apply flex flex-col bg-white rounded shadow-lg p-12 mt-12;
+}
+.form-label {
+  @apply font-semibold text-xs;
+}
+.form-input {
+  @apply flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2;
+}
+.form-link {
+  @apply text-blue-400 hover:text-blue-500;
+}
+.form-action {
+  @apply flex mt-6 justify-center text-xs;
+}
+.form-submit-btn {
+  @apply flex items-center justify-center h-12 px-6 w-64 bg-blue-600 mt-8 rounded font-semibold text-sm text-blue-100 hover:bg-blue-700;
+}
+.toggle-container {
+  @apply flex items-center justify-center w-screen h-screen;
+}
+.toggle-label {
+  @apply flex items-center justify-start w-10 border border-black h-6 p-1 cursor-pointer;
+}
+.toggle-span {
+  @apply w-4 h-4 bg-black;
+}
+
+input[type="checkbox"]:checked + label {
+	justify-content: flex-end;
+	background-color: black;
+}
+
+input[type="checkbox"]:checked + label span {
+	background-color: white;
+}
+.tooltip-wrapper {
+  @apply max-w-max relative flex flex-col items-center;
+}
+.tooltip-container {
+  @apply absolute bottom-0 flex-col items-center mb-6;
+}
+.tooltip-text {
+  @apply relative z-10 p-2 text-xs leading-none text-white whitespace-nowrap bg-black shadow-lg;
+}
+.tooltip-bg {
+  @apply w-3 h-3 -mt-2 transform rotate-45 bg-black;
+}
+.tooltip-container {
+  display: none;
+}
+.tooltip-wrapper:hover .tooltip-container {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.3f7d6c41.chunk.css.map*/
